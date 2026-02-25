@@ -1,2 +1,4 @@
 # UniVBench
-The official code and datasets for "UniVBench: Towards Unified Evaluation for Video Foundation Models"
+The official repo for "UniVBench: Towards Unified Evaluation for Video Foundation Models"
+
+Dataset expansion and code organization are in progress.
