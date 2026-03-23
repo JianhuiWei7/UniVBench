@@ -1,11 +1,15 @@
 # UniVBench: Towards Unified Evaluation for Video Foundation Models
 > 
 > **Official repository for the CVPR 2026 paper: "UniVBench: Towards Unified Evaluation for Video Foundation Models"**.
-
 > 
-<a  href="https://arxiv.org/abs/2602.21835"><img src="https://img.shields.io/badge/PaperLink-red.svg?style=for-the-badge"></a>
-<a  href="https://huggingface.co/datasets/JianhuiWei/UniVBench"><img src="https://img.shields.io/badge/DatasetLink-red.svg?style=for-the-badge"></a>
-> We are continuing to update the repo now
+> We are continuing to update the repo.
+> 
+
+<p align="center">
+  <a href="https://arxiv.org/abs/2602.21835" target="_blank"><img src="https://img.shields.io/badge/arXiv-2602.21835-red"></a>
+  <a href="https://huggingface.co/datasets/JianhuiWei/UniVBench" target="_blank"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-blue"></a>
+</p>
+
 ## 💡 About
 
 Video foundation models aim to integrate video understanding, generation, editing, and instruction following within a single framework, making them a central direction for next-generation multimodal systems. 
@@ -60,7 +64,7 @@ Finally, an **evaluation_score agent** aggregates diagnostic results and provide
 
 
 
-## Dataset Download
+## ✍️ Dataset Download
 
 To download the whole UniVBench dataset, run the following command in your terminal:
 
@@ -68,7 +72,7 @@ To download the whole UniVBench dataset, run the following command in your termi
 python ./download.py
 ```
 
-## UniVBench Benchmark Directory Structure
+## UniVBench Directory Structure
 
 Here is the directory structure for `UniVBench/benchmark` along with descriptions for each folder and file type:
 
