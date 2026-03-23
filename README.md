@@ -59,7 +59,7 @@ Finally, an **evaluation_score agent** aggregates diagnostic results and provide
 
 
 
-## ⚙️ Dataset Download
+## Dataset Download
 
 To download the whole UniVBench dataset, run the following command in your terminal:
 
