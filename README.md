@@ -44,7 +44,7 @@ UniVBench is the first unified benchmark designed to evaluate video foundation m
 
 We pair the benchmark with a unified agentic evaluation system (UniV-Eval) that standardizes prompting, instruction parsing, and multi-dimensional scoring across all tasks. This provides **consistent, interpretable metrics** that enable direct cross-model and cross-task comparison, while **supporting fine-grained attribution of errors to perception versus generation components**.
 
-> *\*Note*: The dataset scale is expanded from 200 samples (in the original paper) to 620.
+> *\*Note*: The dataset scale has been expanded from 200 samples (in the original paper) to 620.
 
 ## 📌 Case Study of UniVEval
 
