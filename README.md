@@ -61,7 +61,59 @@ Finally, an **evaluation_score agent** aggregates diagnostic results and provide
 
 ## ⚙️ Dataset Download
 
-Dataset Link: https://huggingface.co/datasets/JianhuiWei/UniVBench
+To download the whole UniVBench dataset, run the following command in your terminal:
+
+```bash
+python ./download.py
+```
+
+## UniVBench Benchmark Directory Structure
+
+Here is the directory structure for `UniVBench/benchmark` along with descriptions for each folder and file type:
+
+```text
+UniVBench/
+├── full_list/                             # Complete benchmark data for video editing tasks
+│   ├── 1/                                 # Each numbered folder represents a specific test case
+│   │   ├── 1.mp4                          # The original source video file
+│   │   ├── caption.json                   # Captions for the video **[T2V, V2T, V2V tasks]**
+│   │   ├── number_of_shot.txt             # Records the number of shots in the video
+│   │   ├── text_editing.txt               # Text editing instructions (original instruction)
+│   │   ├── text_editing_en.txt            # English text editing **[TV2V]** instructions (Optimized instruction; English)
+│   │   ├── text_editing_cn.txt            # Chinese text editing **[TV2V]** instructions (Optimized instruction; Chinese)
+│   │   ├── reference_editing_single/      
+│   │   │   ├── reference_editing.txt      # Editing instructions for the single reference image (original instruction)
+│   │   │   ├── reference_editing_en.txt   # English editing instructions with single reference image**[RV2V]** (Optimized instruction)
+│   │   │   ├── reference_editing_cn.txt   # Chinese editing instructions with single reference image**[RV2V]** (Optimized instruction)
+│   │   │   └── reference_image_1.jpeg     
+│   │   └── reference_editing_multiple/    # Editing materials directory for multiple reference images
+│   │       ├── reference_editing.txt      # Editing instructions for multiple reference images (original instruction)
+│   │       ├── reference_editing_en.txt   # English editing instructions with multiple reference images**[RV2V]** (Optimized instruction)
+│   │       ├── reference_editing_cn.txt   # Chinese editing instructions with multiple reference images**[RV2V]** (Optimized instruction)
+│   │       ├── reference_image_1.png      
+│   │       └── reference_image_2.jpeg     
+│   ├── 2/
+│   │   └── ...
+│   └── ... (Contains hundreds of similarly numbered test cases)
+│
+├── R2V/                                # Data for Reference-to-Video generation tasks **[R2V]**
+│   ├── 1/                              # Each numbered folder represents an R2V test case
+│   │   ├── R2V_planning.json           # Planning configuration and parameters for the R2V task
+│   │   ├── reference_image_0.png       # Reference image 0 used for video generation
+│   │   └── reference_image_1.jpeg      # Reference image 1 used for video generation
+│   ├── 2/
+│   │   └── ...
+│   └── ... (Contains hundreds of R2V test cases)
+│
+└── reference_images_set/               # A categorized repository of reference images
+    ├── animals/                        # Reference images of animals
+    ├── objects/                        # Reference images of objects
+    ├── people/                         # Reference images of people
+    ├── plants/                         # Reference images of plants
+    └── scenes/                         # Reference images of scenes
+```
+
+
 
 ## 📖 Citation
 
