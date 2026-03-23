@@ -1,11 +1,10 @@
 # UniVBench: Towards Unified Evaluation for Video Foundation Models
 > 
 > **Official repository for the CVPR 2026 paper: "UniVBench: Towards Unified Evaluation for Video Foundation Models"**.
-> 
-> Note: Code and dataset will be available soon.
+
 > 
 <a  href="https://arxiv.org/abs/2602.21835"><img src="https://img.shields.io/badge/PaperLink-red.svg?style=for-the-badge"></a>
-
+<a  href="https://huggingface.co/datasets/JianhuiWei/UniVBench"><img src="https://img.shields.io/badge/DatasetLink-red.svg?style=for-the-badge"></a>
 ## 💡 About
 
 Video foundation models aim to integrate video understanding, generation, editing, and instruction following within a single framework, making them a central direction for next-generation multimodal systems. 
@@ -14,9 +13,19 @@ However, existing evaluation benchmarks remain fragmented and limited in scope, 
 
 ## 🚀 Key Contributions
 
-* **Unified Benchmark**: The first multi-shot video dataset specifically designed for unified evaluation, free of copyright and contamination issues.
+* **Unified Benchmark(UniVBench)**: a multi-task video sources, with 
+1. Non-copyright, multi/single-shot, high-quality videos.
+2. Detailed video captions (for **T2V, V2T, V2V[reconstruction]** tasks).
+3. Text + Reference images for video editing instruction(for **TV2V, RV2V** tasks).
+4. Text +  Reference images to video generation (for **R2V** task).
+5. Comprehensive image sets.
+All curated, verified , and selected manually.
 
-* **Unified Evaluation**: A unified agentic evaluation system that enables  measurement across understanding, generation, editing, and reconstruction.
+
+* **Unified Evaluation(UniVEval)**: a multi-task evaluation system, with 
+1. Comprehenisve and fine-grained dimensions.
+2. Atomic checklist for objective score and interpretability. (textctual feedback for model improvement)
+3. Dynamic adaptation to multiple input modality (text, image, video)
 
 * **Evaluation and Video Modeling Alignment**: A principled framework for attributing model capabilities and failures across the perception-generation spectrum. By aligning evaluation with the goals of unified video modeling, our benchmark establishes a foundation for measuring progress toward general-purpose, instruction-following video intelligence.
 
@@ -26,9 +35,11 @@ However, existing evaluation benchmarks remain fragmented and limited in scope, 
 
 <img width="1000" height="710" alt="image" src="https://github.com/JianhuiWei7/UniVBench/blob/main/assest/teaserfigure_UniVBench.png" />
 
-UniVBench is the first unified benchmark designed to evaluate video foundation models across their full capability spectrum. The benchmark comprises **600 high-quality, multi-shot videos, each with rich annotations including detailed captions, multi-format editing instructions, and reference images**. Crucially, all content is **human-created and copyright-free**, enabling fair evaluation of editing, reconstruction, and instruction-following without legal or data contamination concerns. 
+UniVBench is the first unified benchmark designed to evaluate video foundation models across their full capability spectrum. The benchmark comprises **620\* high-quality, multi-shot videos, each with rich annotations including detailed captions, multi-format editing instructions, and reference images**. Crucially, all content is **human-created and copyright-free**, enabling fair evaluation of editing, reconstruction, and instruction-following without legal or data contamination concerns. 
 
 We pair the benchmark with a unified agentic evaluation system (UniV-Eval) that standardizes prompting, instruction parsing, and multi-dimensional scoring across all tasks. This provides **consistent, interpretable metrics** that enable direct cross-model and cross-task comparison, while **supporting fine-grained attribution of errors to perception versus generation components**.
+
+> *\*Note*: The dataset scale is expanded from 200 samples (in the original paper) to 620.
 
 ## 📌 Case Study of UniVEval
 
@@ -48,9 +59,9 @@ Finally, an **evaluation_score agent** aggregates diagnostic results and provide
 
 
 
-## ⚙️ Data Synthesis
+## ⚙️ Dataset Download
 
-*(Installation instructions, environment setup, and inference scripts will be updated upon code release.)*
+Dataset Link: https://huggingface.co/datasets/JianhuiWei/UniVBench
 
 ## 📖 Citation
 
