@@ -5,6 +5,7 @@
 > 
 <a  href="https://arxiv.org/abs/2602.21835"><img src="https://img.shields.io/badge/PaperLink-red.svg?style=for-the-badge"></a>
 <a  href="https://huggingface.co/datasets/JianhuiWei/UniVBench"><img src="https://img.shields.io/badge/DatasetLink-red.svg?style=for-the-badge"></a>
+> We are continuing to update the repo now
 ## 💡 About
 
 Video foundation models aim to integrate video understanding, generation, editing, and instruction following within a single framework, making them a central direction for next-generation multimodal systems. 
