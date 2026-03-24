@@ -60,10 +60,6 @@ We pair the benchmark with a unified agentic evaluation system (UniV-Eval) that 
 Finally, an **evaluation_score agent** aggregates diagnostic results and provides final scores across six evaluation dimensions.
 
 
-## 📊 Evaluation & Results
-
-
-
 ## ✍️ Dataset Download
 
 To download the whole UniVBench dataset, run the following command in your terminal:
@@ -72,7 +68,7 @@ To download the whole UniVBench dataset, run the following command in your termi
 python ./download.py
 ```
 
-## UniVBench Directory Structure
+## 📊 UniVBench Directory Structure
 
 Here is the directory structure for `UniVBench/benchmark` along with descriptions for each folder and file type:
 
