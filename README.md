@@ -70,7 +70,7 @@ python ./download.py
 
 ## 📊 UniVBench Directory Structure
 
-Here is the directory structure for `UniVBench/benchmark` along with descriptions for each folder and file type:
+Here is the directory structure for `UniVBench` along with descriptions for each folder and file type:
 
 ```text
 UniVBench/
