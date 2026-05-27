@@ -2,7 +2,6 @@
 > 
 > **Official repository for the CVPR 2026 paper: "UniVBench: Towards Unified Evaluation for Video Foundation Models"**.
 > 
-> We are continuing to update the repo.
 > 
 
 <p align="center">
