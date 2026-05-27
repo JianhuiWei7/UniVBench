@@ -1,5 +1,11 @@
 # UniV-Eval 全局视频评估
 
+<p align="center">
+  <b>语言 / Language</b>:
+  <a href="./README.md">English</a> |
+  <a href="./README.zh-CN.md">简体中文</a>
+</p>
+
 `UniV-Eval` 是一个用于批量评估视频生成结果的轻量工具。主入口是 `evaluation_global.py`：它会遍历输入目录下的每个 case，读取视频、参考图和文本指令，抽取视频帧，组装成多模态消息，然后调用评估 Agent 输出质量检查结果和结构化评分。
 
 ## 1. 文件说明
@@ -13,6 +19,7 @@ V2T_evaluation.py
 customized_agents_evaluation.py
 api_master.py
 requirements.txt
+README.md
 README.zh-CN.md
 README.en.md
 ```
